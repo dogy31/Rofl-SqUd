@@ -1,0 +1,53 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    position: fixed; /* Заменено на fixed */
+    top: 0; /* Прикрепить к верхней части окна */
+    width: 100%; /* Ширина 100% */
+    z-index: 10; /* Убедитесь, что navbar будет выше других элементов */
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content {
+    padding-top: 70px; /* Отступ для контента под navbar */
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.card {
+    transition: transform 0.3s ease; /* Плавный переход для трансформации */
+}
+
+.card:hover {
+    transform: scale(1.01); /* Увеличение карточки */
+}
+
+.overlay {
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с прозрачностью для затемнения */
+    display: flex; /* Устанавливаем flexbox для центрирования текста */
+    justify-content: center; /* Горизонтально центрируем */
+    align-items: center; /* Вертикально центрируем */
+}
